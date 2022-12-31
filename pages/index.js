@@ -7,6 +7,8 @@ import Intro from '../components/intro'
 import About from '../components/about'
 import Sidebar from '../components/sidebar'
 import Projects from '../components/projects'
+import Contact from '../components/contact'
+import Footer from '../components/footer'
 
 export default function Home({ intro, about, projects }) {
   return (
@@ -18,10 +20,12 @@ export default function Home({ intro, about, projects }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-primary min-h-screen w-screen text-gray">
+        <Sidebar />
         <Intro name={intro.name} heading={intro.heading} description={intro.description} />
         <About content={about.content} skills={about.skills} />
         <Projects projects={projects} />
-        <Sidebar />
+        <Contact />
+        <Footer />
       </main>
     </>
   )
