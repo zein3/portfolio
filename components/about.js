@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Section from './section'
 import Header from './section/header'
 
-export default function About({ paragraph1, paragraph2, skills }) {
+export default function About({ content, skills }) {
   return (
     <>
       <Section id="about">
@@ -11,12 +11,7 @@ export default function About({ paragraph1, paragraph2, skills }) {
         </Header>
         <div className="flex flex-col lg:grid lg:grid-cols-5 p-4 lg:py-8">
           <div data-aos="fade-right" className="lg:col-span-3 text-gray pr-6">
-            <p>
-              { paragraph1 }
-            </p>
-            <p className="mt-4">
-              { paragraph2 }
-            </p>
+            <div className="grid grid-cols-1 gap-y-4" dangerouslySetInnerHTML={{ __html: content }}></div>
             <p className="mt-8">
               My Skills:
             </p>

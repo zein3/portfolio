@@ -18,7 +18,7 @@ export default function Home({ intro, about, projects }) {
       </Head>
       <main className="bg-primary min-h-screen w-screen text-gray">
         <Intro name={intro.name} heading={intro.heading} description={intro.description} />
-        <About paragraph1={about.paragraph1} paragraph2={about.paragraph2} skills={about.skills} />
+        <About content={about.content} skills={about.skills} />
         <Sidebar />
       </main>
     </>
@@ -29,7 +29,6 @@ export async function getStaticProps() {
   const intro = getIntroData();
   const about = getAboutData();
   const projects = getAllProjects();
-  console.log(projects);
 
   return {
     props: {
