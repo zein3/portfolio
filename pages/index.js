@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Intro from '../components/intro'
 import About from '../components/about'
-import RightSidebar from '../components/rightSidebar'
+import Sidebar from '../components/sidebar'
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <main className="bg-primary min-h-screen w-screen text-gray">
         <Intro />
         <About />
-        <RightSidebar />
+        <Sidebar />
       </main>
     </>
   )
