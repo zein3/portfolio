@@ -30,8 +30,8 @@ export default function About() {
             </ul>
           </div>
           <div data-aos="fade-left" className="lg:col-span-2 flex flex-row py-8 justify-center">
-            <div className="relative">
-              <div className="absolute w-[250px] h-[250px] border-2 border-secondary rounded-md z-0 top-4 left-4"></div>
+            <div className="relative moving-border">
+              <div className="absolute w-[250px] h-[250px] border-2 border-secondary rounded-md z-0 top-6 left-6 transition"></div>
               <Image
                 src="https://picsum.photos/500"
                 alt="Picture of me"

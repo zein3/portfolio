@@ -13,3 +13,7 @@
 .icon {
   @apply w-[16px] h-[16px] text-gray hover:text-secondary mb-4 transition hover:-translate-y-1;
 }
+
+.moving-border:hover div {
+  transform: translate(-0.5rem, -0.5rem);
+}

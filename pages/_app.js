@@ -6,7 +6,10 @@ import '../styles/globals.css'
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
-    AOS.init()
+    AOS.init({
+      delay: 100,
+      duration: 400,
+    })
   }, [])
   return <Component {...pageProps} />
 }
