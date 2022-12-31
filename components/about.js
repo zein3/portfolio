@@ -24,12 +24,6 @@ export default function About({ paragraph1, paragraph2, skills }) {
               {skills.map((skill, i) => {
                 return <li key={i} className="before:content-['▹'] before:text-secondary before:mr-1">{ skill }</li>
               })}
-              {/* <li className="before:content-['▹'] before:text-secondary before:mr-1">Javascript</li> */}
-              {/* <li className="before:content-['▹'] before:text-secondary before:mr-1">Javascript</li>
-              <li className="before:content-['▹'] before:text-secondary before:mr-1">Javascript</li>
-              <li className="before:content-['▹'] before:text-secondary before:mr-1">Javascript</li>
-              <li className="before:content-['▹'] before:text-secondary before:mr-1">Javascript</li>
-              <li className="before:content-['▹'] before:text-secondary before:mr-1">Javascript</li> */}
             </ul>
           </div>
           <div data-aos="fade-left" className="lg:col-span-2 flex flex-row py-8 justify-center">

@@ -1,12 +1,13 @@
 import { getIntroData } from '../lib/getIntro'
 import { getAboutData } from '../lib/getAbout'
+import { getAllProjects } from '../lib/getProjects'
 
 import Head from 'next/head'
 import Intro from '../components/intro'
 import About from '../components/about'
 import Sidebar from '../components/sidebar'
 
-export default function Home({ intro, about }) {
+export default function Home({ intro, about, projects }) {
   return (
     <>
       <Head>
@@ -27,11 +28,14 @@ export default function Home({ intro, about }) {
 export async function getStaticProps() {
   const intro = getIntroData();
   const about = getAboutData();
+  const projects = getAllProjects();
+  console.log(projects);
 
   return {
     props: {
       intro,
-      about
+      about,
+      projects
     }
   }
 }
