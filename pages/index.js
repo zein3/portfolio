@@ -6,6 +6,7 @@ import Head from 'next/head'
 import Intro from '../components/intro'
 import About from '../components/about'
 import Sidebar from '../components/sidebar'
+import Projects from '../components/projects'
 
 export default function Home({ intro, about, projects }) {
   return (
@@ -19,6 +20,7 @@ export default function Home({ intro, about, projects }) {
       <main className="bg-primary min-h-screen w-screen text-gray">
         <Intro name={intro.name} heading={intro.heading} description={intro.description} />
         <About content={about.content} skills={about.skills} />
+        <Projects projects={projects} />
         <Sidebar />
       </main>
     </>

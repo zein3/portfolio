@@ -29,7 +29,7 @@ export default function About({ content, skills }) {
                 alt="Picture of me"
                 width={250}
                 height={250}
-                className="rounded-md z-10 relative"
+                className="rounded-md z-10 relative hover:shadow-md"
               />
             </div>
           </div>
