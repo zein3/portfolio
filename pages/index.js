@@ -1,6 +1,7 @@
 import { getIntroData } from '../lib/getIntro'
 import { getAboutData } from '../lib/getAbout'
 import { getAllProjects } from '../lib/getProjects'
+import { getContactInfo } from '../lib/getContactInfo'
 
 import Head from 'next/head'
 import Intro from '../components/intro'
@@ -10,7 +11,7 @@ import Projects from '../components/projects'
 import Contact from '../components/contact'
 import Footer from '../components/footer'
 
-export default function Home({ intro, about, projects }) {
+export default function Home({ intro, about, projects, contact }) {
   return (
     <>
       <Head>
@@ -20,11 +21,11 @@ export default function Home({ intro, about, projects }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-primary min-h-screen w-screen text-gray">
-        <Sidebar />
+        <Sidebar contact={contact} />
         <Intro name={intro.name} heading={intro.heading} description={intro.description} />
         <About content={about.content} skills={about.skills} />
         <Projects projects={projects} />
-        <Contact />
+        <Contact contact={contact} />
         <Footer />
       </main>
     </>
@@ -35,12 +36,14 @@ export async function getStaticProps() {
   const intro = getIntroData();
   const about = getAboutData();
   const projects = getAllProjects();
+  const contact = getContactInfo();
 
   return {
     props: {
       intro,
       about,
-      projects
+      projects,
+      contact
     }
   }
 }
