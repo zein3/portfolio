@@ -4,8 +4,8 @@ import Header from './section/header'
 export default function Contact({ contact }) {
   return (
     <>
-      <Section id="contact" dataAos="fade-up">
-        <Header>
+      <Section id="contact">
+        <Header dataAos="fade-up">
           Contact
         </Header>
         <div data-aos="fade-up" data-aos-anchor="#contact" className="w-full flex flex-col items-center lg:h-full lg:justify-center">

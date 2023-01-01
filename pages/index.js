@@ -16,13 +16,13 @@ export default function Home({ intro, about, projects, contact }) {
     <>
       <Head>
         <title>{ intro.name }</title>
-        <meta name="description" content="Freelance Web Developer" />
+        <meta name="description" content={ intro.tagline } />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-primary min-h-screen w-screen text-gray">
         <Sidebar contact={contact} />
-        <Intro name={intro.name} heading={intro.heading} description={intro.description} />
+        <Intro name={intro.name} tagline={intro.tagline} description={intro.description} />
         <About content={about.content} skills={about.skills} />
         <Projects projects={projects} />
         <Contact contact={contact} />

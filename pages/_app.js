@@ -9,6 +9,7 @@ export default function App({ Component, pageProps }) {
     AOS.init({
       delay: 100,
       duration: 400,
+      once: true,
     })
   }, [])
   return <Component {...pageProps} />
