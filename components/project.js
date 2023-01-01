@@ -30,7 +30,7 @@ export default function Project({ project, isEven }) {
               alt={project.metadata.title}
               width={600}
               height={400}
-              className="max-w-sm lg:max-w-md max-h-fit"
+              className="max-w-xs lg:max-w-md max-h-fit"
             />
           </div>
         </div>
