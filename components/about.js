@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Section from './section'
 import Header from './section/header'
 
+import MyPicture from '../public/images/me.jpg'
+
 export default function About({ content, skills }) {
   return (
     <>
@@ -25,11 +27,11 @@ export default function About({ content, skills }) {
             <div className="relative moving-border">
               <div className="absolute w-[250px] h-[250px] border-2 border-secondary rounded-md z-0 top-6 left-6 transition"></div>
               <Image
-                src="https://picsum.photos/500"
+                src={MyPicture}
                 alt="Picture of me"
                 width={250}
                 height={250}
-                className="rounded-md z-10 relative hover:shadow-md"
+                className="rounded-md z-10 relative hover:shadow-md w-[250px] h-[250px]"
               />
             </div>
           </div>

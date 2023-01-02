@@ -1,10 +1,11 @@
 {
     "skills": [
         "HTML+CSS",
-        "ES6",
+        "Javascript",
         "PHP",
-        "MySQL",
         "Laravel",
-        "React"
+        "NextJS",
+        "SQL",
+        "MongoDB"
     ]
 }

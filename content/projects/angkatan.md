@@ -6,5 +6,6 @@ link: 'https://angkatan63.stis.ac.id/'
 image: '/images/aksatriya.png'
 ---
 
-Website angkatan untuk angkatan 63 Politeknik Statistika STIS.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit diam lectus, at vulputate mi viverra ut.
+Website for Angkatan 63 Politeknik Statistika STIS.  
+There are several features in the website such as forum and learning material.  
+The website uses Laravel, TailwindCSS, and MySQL.
