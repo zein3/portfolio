@@ -20,7 +20,7 @@ export default function Home({ intro, about, projects, contact }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-primary min-h-screen w-screen text-gray">
+      <main className="bg-primary min-h-screen w-screen max-w-full text-gray font-sans">
         <Sidebar contact={contact} />
         <Intro name={intro.name} tagline={intro.tagline} description={intro.description} />
         <About content={about.content} skills={about.skills} />

@@ -15,7 +15,7 @@
 }
 
 .footer-link {
-  @apply font-light text-sm transition text-white hover:text-secondary hover:underline underline-offset-1;
+  @apply font-semibold text-sm transition text-white hover:text-secondary hover:underline underline-offset-1;
 }
 
 .moving-border:hover div {

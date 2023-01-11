@@ -1,3 +1,1 @@
-Hi! My name is Zein and I enjoy programming. My interest in programming started when I was in 6th grade when I tried to make a mod for GTA: San Andreas. Turns out programming is a lot of fun!
-
 I am a full stack web developer with experience in both front-end and back-end development. I have a strong foundation in HTML, CSS, and JavaScript, and am proficient in modern front-end frameworks such as React and Vue. On the back-end, I have experience working with server-side frameworks such as Laravel and Express, as well as database technologies like MySQL and MongoDB.
