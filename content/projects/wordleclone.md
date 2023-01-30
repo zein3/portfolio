@@ -1,9 +1,12 @@
 ---
 title: 'Wordle Clone'
-order: 2
-date: '2020-01-01'
+date: '2022-03-25'
 link: 'https://wordle-zein-haddad.netlify.app/'
+source: 'https://github.com/zein3/wordle-id/'
 image: '/images/wordleclone.png'
+tech:
+  - VueJS
+  - Pinia
 ---
 
 A wordle clone that I made using Vue Javascript Framework.

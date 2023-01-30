@@ -1,9 +1,12 @@
 ---
 title: 'Website Angkatan'
-order: 1
-date: '2020-01-01'
+date: '2023-06-01'
 link: 'https://angkatan63.stis.ac.id/'
 image: '/images/aksatriya.png'
+tech:
+  - Laravel
+  - Javascript
+  - MySQL
 ---
 
 Website for Angkatan 63 Politeknik Statistika STIS.  

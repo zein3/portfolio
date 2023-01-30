@@ -1,7 +1,7 @@
 ## About
 
 This is my portfolio website. I made this in order to learn NextJS.  
-This website is hosted at [Netlify](https://zein-haddad-portfolio.netlify.app).
+This website is hosted at [Netlify](https://zein-haddad.netlify.app).
 
 ## Installation
 This is just a standard NextJS website rendered with Static Generation.  

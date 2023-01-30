@@ -1,9 +1,12 @@
 ---
 title: 'Portfolio'
-order: 3
-date: '2020-01-01'
+date: '2023-01-31'
 link: 'https://zein-haddad.netlify.app/'
+source: 'https://github.com/zein3/portfolio/'
 image: '/images/portfolio.png'
+tech:
+  - NextJS
+  - React
 ---
 
 This portfolio is made with NextJS.  
