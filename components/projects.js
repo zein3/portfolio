@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Section from './section'
 import Header from './section/header'
 import Project from './project'
+import ProjectCard from './projectCard'
 
 export default function Projects({ projects }) {
   const [showAll, setShowAll] = useState(false);
@@ -21,11 +22,13 @@ export default function Projects({ projects }) {
           })}
         </ul>
         <div class="my-4 w-full flex flex-row justify-center" data-aos="fade-up">
+          { !showAll &&
           <button
           className="text-secondary border-solid border-secondary rounded-lg border-2 py-4 px-6 transition hover:bg-secondary-dim"
           onClick={() => setShowAll(true)}>
             Show All
           </button>
+          }
         </div>
       </Section>
       { showAll &&
@@ -33,6 +36,11 @@ export default function Projects({ projects }) {
           <Header dataAos="fade-up">
             All Projects
           </Header>
+          <ul class="flex flex-col px-4 lg:grid lg:grid-cols-3 lg:grid-flow-col lg:gap-4">
+            { projects.map((project, i) => {
+              return <ProjectCard key={i} index={i} project={project} />
+            }) }
+          </ul>
       </Section>
       }
     </>
