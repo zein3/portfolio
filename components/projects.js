@@ -21,7 +21,7 @@ export default function Projects({ projects }) {
             return <Project key={i} project={project} isEven={(i + 1) % 2 == 0} />
           })}
         </ul>
-        <div class="my-4 w-full flex flex-row justify-center" data-aos="fade-up">
+        <div className="my-4 w-full flex flex-row justify-center" data-aos="fade-up">
           { !showAll &&
           <button
           className="text-secondary border-solid border-secondary rounded-lg border-2 py-4 px-6 transition hover:bg-secondary-dim"
@@ -36,7 +36,7 @@ export default function Projects({ projects }) {
           <Header dataAos="fade-up">
             All Projects
           </Header>
-          <ul class="flex flex-col px-4 lg:grid lg:grid-cols-3 lg:grid-flow-col lg:gap-4">
+          <ul className="flex flex-col px-4 lg:grid lg:grid-cols-3 lg:grid-flow-col lg:gap-4">
             { projects.map((project, i) => {
               return <ProjectCard key={i} index={i} project={project} />
             }) }

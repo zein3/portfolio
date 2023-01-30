@@ -17,9 +17,9 @@ export default function Project({ project, isEven }) {
             </h3>
             <div dangerouslySetInnerHTML={{ __html: project.content }}></div>
             { project.metadata.tech &&
-              <div class="flex flex-row items-center mt-4">
+              <div className="flex flex-row items-center mt-4">
                 { project.metadata.tech.map((tech, i) => {
-                  return <p key={i} class="bg-darkgray mr-2 px-2 py-1 rounded-sm text-gray font-normal text-sm">{ tech }</p>
+                  return <p key={i} className="bg-darkgray mr-2 px-2 py-1 rounded-sm text-gray font-normal text-sm">{ tech }</p>
                 }) }
               </div>
             }
