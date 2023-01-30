@@ -38,10 +38,8 @@ export default function ProjectCard({ project, index }) {
           }
         </div>
       </div>
-      <Modal isOpen={isOpen} closeModal={closeModal}>
-        <div class="bg-secondary w-64 h-64">
-          Tes
-        </div>
+      <Modal isOpen={isOpen} closeModal={closeModal} title={ project.metadata.title }>
+        Tes
       </Modal>
     </>
   )
