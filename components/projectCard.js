@@ -1,9 +1,15 @@
 import { useState } from 'react';
+
 // import Image from 'next/image'
+import Modal from './modal';
 
 export default function ProjectCard({ project, index }) {
   const [isHover, setHover] = useState(false);
-  const [show, setShow] = useState(false);
+  const [isOpen, setOpen] = useState(false);
+
+  const closeModal = () => {
+    setOpen(false);
+  }
 
   return (
     <>
@@ -15,7 +21,7 @@ export default function ProjectCard({ project, index }) {
         <div className="w-full h-full flex flex-col justify-between rounded-sm bg-primary-dim transition hover:cursor-pointer hover:-translate-y-2"
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
-          onClick={() => setShow(true)}
+          onClick={() => setOpen(true)}
         >
           <div className="p-4">
             <h3 class={"font-medium text-2xl mb-2 transition " + (isHover ? 'text-secondary' : 'text-white')}>
@@ -32,6 +38,11 @@ export default function ProjectCard({ project, index }) {
           }
         </div>
       </div>
+      <Modal isOpen={isOpen} closeModal={closeModal}>
+        <div class="bg-secondary w-64 h-64">
+          Tes
+        </div>
+      </Modal>
     </>
   )
 }
