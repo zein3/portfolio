@@ -4,6 +4,7 @@ date: '2023-01-31'
 link: 'https://zein-haddad.netlify.app/'
 source: 'https://github.com/zein3/portfolio/'
 image: '/images/portfolio.png'
+excerpt: 'This portfolio'
 tech:
   - NextJS
   - React

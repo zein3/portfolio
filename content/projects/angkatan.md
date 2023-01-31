@@ -3,6 +3,7 @@ title: 'Website Angkatan'
 date: '2023-06-01'
 link: 'https://angkatan63.stis.ac.id/'
 image: '/images/aksatriya.png'
+excerpt: 'Website for Angkatan 63 Politeknik Statistika STIS made with Laravel'
 tech:
   - Laravel
   - Javascript
