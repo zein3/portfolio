@@ -36,7 +36,7 @@ export default function Projects({ projects }) {
           <Header dataAos="fade-up">
             All Projects
           </Header>
-          <ul className="flex flex-col px-4 lg:grid lg:grid-cols-3 lg:grid-flow-col lg:gap-4">
+          <ul className="flex flex-col px-4 lg:grid lg:grid-cols-3 lg:gap-4">
             { projects.map((project, i) => {
               return <ProjectCard key={i} index={i} project={project} />
             }) }
