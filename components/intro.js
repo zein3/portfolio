@@ -1,7 +1,7 @@
 import Typewriter from 'typewriter-effect'
 import Section from './section'
 
-export default function Intro({ name, tagline, description }) {
+export default function Intro({ name, tagline, description, cv }) {
   return (
     <>
       <Section id="intro">
@@ -19,9 +19,11 @@ export default function Intro({ name, tagline, description }) {
               }}
             />
           </div>
+          {cv &&
           <div data-aos="fade-up" data-aos-delay="500" className="mt-4 lg:mt-0 lg:h-1/6 flex flex-col justify-center">
             <a className="text-secondary border-solid border-secondary rounded-lg border-2 py-4 px-6 transition hover:bg-secondary-dim" href="/CV.pdf" target="_blank" noreferrer="true">Curriculum Vitae</a>
           </div>
+          }
         </div>
       </Section>
     </>
