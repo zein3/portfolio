@@ -20,7 +20,7 @@ export default function Home({ intro, about, projects }) {
         <Intro name={intro.name} tagline={intro.tagline} description={intro.description} cv={false} />
         <About content={about.content} skills={about.skills} />
         <Projects projects={projects} />
-        <div class="w-full h-24"></div>
+        <div className="w-full h-24"></div>
       </main>
     </>
   )

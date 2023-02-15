@@ -16,6 +16,7 @@ export default function ProjectCard({ project, index }) {
       <div
         className="my-2 lg:my-0"
         data-aos="fade-up"
+        data-aos-offset="0"
         data-aos-duration={(index % 3) * 200 + 700}
       >
         <div className="flex flex-col justify-between w-full h-full transition rounded-sm bg-primary-dim hover:cursor-pointer hover:-translate-y-2"
