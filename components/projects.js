@@ -21,7 +21,7 @@ export default function Projects({ projects }) {
             return <Project key={i} project={project} isEven={(i + 1) % 2 == 0} />
           })}
         </ul>
-        <div className="my-4 w-full flex flex-row justify-center" data-aos="fade-up" data-aos-offset="0" data-aos-anchor="#recent-projects" data-aos-anchor-placement="bottom-bottom">
+        <div className="my-4 w-full flex flex-row justify-center">
           { !showAll &&
           <button
           className="text-secondary border-solid border-secondary rounded-lg border-2 py-4 px-6 transition hover:bg-secondary-dim"
